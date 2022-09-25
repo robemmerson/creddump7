@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+    pwdump7:
+        build: .
+        command: "/loot/system /loot/sam"
+        container_name: pwdump7
+        hostname: pwdump7
+        volumes:
+            - ./loot:/loot
+        restart: "no"
